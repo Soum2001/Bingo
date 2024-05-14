@@ -1,0 +1,81 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS (and SCSS, if configured) file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+body{
+    margin: 0;
+    padding: 0;
+    padding-top: 30px;
+}
+
+ body:focus{
+    outline:  none;
+}
+
+.container{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
+ #tblbingo{
+    border-collapse: collapse;
+    height: 25rem;
+    width: 25rem;
+    text-align: center;
+    font-size: 22pt;
+    cursor: pointer;
+ }
+
+ #tblbingo td{
+    padding: 0.3rem;
+ }
+
+ .cell-format{
+    height:100px;
+    width: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20%;
+    border: 0.5px solid #cccece;
+
+ }
+
+ .cell-format:hover{
+    background-color: #cccece;
+ }
+
+ .letter-div{
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+ }
+
+ .letter-bingo{
+    padding: 0 1.3rem;
+    font-size: 100pt;
+ } 
+
+ .strickout{
+    text-decoration: line-through;
+    color: #cccece;
+    font-size: 18pt;
+    pointer-events: none;
+ }
+ .show-bingo{
+    display: inline;
+ }
